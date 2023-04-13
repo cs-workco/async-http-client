@@ -17,11 +17,11 @@ import PackageDescription
 
 let package = Package(
     name: "async-http-client",
+    platforms: [
+        .iOS(.v15),
+    ],
     products: [
         .library(name: "AsyncHTTPClient", targets: ["AsyncHTTPClient"]),
-    ],
-    platforms: [
-        .iOS(.v16),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.50.0"),
