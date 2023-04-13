@@ -20,6 +20,9 @@ let package = Package(
     products: [
         .library(name: "AsyncHTTPClient", targets: ["AsyncHTTPClient"]),
     ],
+    platforms: [
+        .iOS(.v16),
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.50.0"),
         .package(url: "https://github.com/apple/swift-nio-ssl.git", from: "2.22.0"),
